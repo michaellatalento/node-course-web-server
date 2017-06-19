@@ -34,9 +34,9 @@ app.use((request, response, next) => {
     next();
 });
 
-app.use((request, response, next) => {
-    response.render("maintenance.hbs");
-})
+// app.use((request, response, next) => {
+//     response.render("maintenance.hbs");
+// })
 
 // it works now!!!
 app.use(express.static(__dirname + "/public"));
