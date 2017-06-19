@@ -99,6 +99,14 @@ app.get("/about", (request, response) => {
     })
 });
 
+app.get("/projects", (request, response) => {
+    //response.render("about.hbs");
+    response.render("projects.hbs", {
+        authorName: "Mica",
+        pageTitle: "Projects Page"
+    })
+});
+
 //challenge
 //create another app.get with a JSON file with an error message
 app.get("/bad", (request, response) => {
